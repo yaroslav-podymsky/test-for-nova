@@ -1,0 +1,39 @@
+:root {
+  --primary-color-red: #EC3F3F;
+  --secondary-color-red: #EC3F3F1A;
+  --secondary-font-color: #FFFFFF;
+  --breakpoint-lg: 1440px;
+  --breakpoint-md: 768px;
+  --breakpoint-sm: 360px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--secondary-font-color);
+  font-family: 'FuturaPT'
+}
+
+@font-face {
+  font-family: 'FuturaPT';
+  src: url('../../resources/fonts/FuturaPT-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

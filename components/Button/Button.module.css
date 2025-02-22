@@ -1,0 +1,33 @@
+.button {
+  background-color: var(--primary-color-red);
+  height: 56px;
+  padding: 0px 32px;
+  border: 1px solid transparent;
+  transition: .4s;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.7px;
+  vertical-align: middle;
+  all: unset
+}
+
+.button:hover {
+  background-color: #FF1E1E;
+  cursor: pointer;
+  box-shadow: 0 2px 24px 0px #FF1E1E80;
+  border: 1px solid transparent;
+
+}
+
+.secondary {
+  border: 1px solid #EC3F3FCC;
+  background-color: var(--secondary-color-red);
+}
+
+.sizeS {
+  height: 48px;
+  padding: 0 32px;
+
+}

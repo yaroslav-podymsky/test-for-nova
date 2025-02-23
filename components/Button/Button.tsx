@@ -21,7 +21,7 @@ const Button: React.FC<TProps> = ({ title, type = "primary", size = "m", onClick
     })}
       onClick={onClick}
     >
-      {title}
+      <p>{title}</p>
     </button>
   );
 };

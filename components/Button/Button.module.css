@@ -1,6 +1,7 @@
 .button {
   background-color: var(--primary-color-red);
   height: 56px;
+  width: fit-content;
   padding: 0px 32px;
   border: 1px solid transparent;
   transition: .4s;
@@ -8,9 +9,10 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  letter-spacing: 0.7px;
   vertical-align: middle;
-  all: unset
+}
+.button > p {
+  letter-spacing: 0.7px;  
 }
 
 .button:hover {
@@ -29,5 +31,4 @@
 .sizeS {
   height: 48px;
   padding: 0 32px;
-
 }

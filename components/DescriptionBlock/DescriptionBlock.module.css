@@ -1,20 +1,78 @@
 .root {
     width: 100%;
-    height: 45vh;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+}
+.img {
+    width: 100%;
+    height: 100%;
     background-image: url("../../resources/images/rootImg.png");
     -moz-transform: scale(-1, 1);
     -o-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
-    transform: scale(-1, 1);
+    transform: scale(-1.2, 1.2);
     background-repeat: no-repeat;
-    background-position: 0 -112px;
+    background-position: 120px 20%;
     background-size: cover;
 }
+.descriptions {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    top: 104px;
+    left: 120px;
+    max-width: 30%;
+}
+.root button {
+    margin-top: 16px;
+}
 
+@media (max-width: 1920px) {
+    .root {
+        height: 35vh;
+    }
+  }
 @media (max-width: 1440px) {
     .root {
         height: 440px;
-        background-position: 0 -0;
+    }
+    .img{
+        transform: scale(-1.4, 1.4);
+        background-position: 100px 20%
+    }
+    .descriptions {
+        top: 60px;
+        left: 64px;
+        max-width: 424px;
+    }
+  }
 
+  @media (max-width: 768px) {
+    .root {
+        height: 360px;
+    }
+    .img{
+        transform: scale(-1.6, 1.6);
+        background-position: 84px 30px;
+    }
+    .descriptions {
+        top: 56px;
+        left: 16px;
+        max-width: 370px;
+        gap: 16px;
+    }
+  }
+  @media (max-width: 524px) {
+    .img{
+        transform: scale(-1.6, 1.6);
+        background-position:-15px 30px;
+    }
+  }
+  @media (max-width: 360px) {
+    .descriptions {
+        max-width: 280px;
+        gap: 6px;
     }
   }

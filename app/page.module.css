@@ -1,0 +1,15 @@
+.root {
+    background-color: var(--primary-background-color);
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    /* padding: 72px 120px 96px 120px; */
+}
+
+@media (max-width: 1440px) {
+    .root {
+        gap: 64px;
+
+    }
+}
+  

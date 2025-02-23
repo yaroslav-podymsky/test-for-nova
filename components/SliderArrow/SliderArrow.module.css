@@ -1,0 +1,40 @@
+.root {
+    position: absolute;
+    top: -108px;
+    right: 120px;
+    transition: .4s;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    right: 176px;
+
+}
+.root path {
+    transition: .4s;
+}
+.hover {
+    cursor: pointer;
+}
+.hover:hover path {
+    fill: #FF1E1E;
+    box-shadow: 0 2px 24px 0px #FF1E1E80;
+}
+
+
+@media (max-width: 1440px) {
+    .root {
+        right: 64px
+    }
+    .rotate {
+        right: 120px
+    }
+}
+  @media (max-width: 768px) {
+    .root {
+        right: 16px;
+    }
+    .rotate {
+        right: 72px
+    }
+}

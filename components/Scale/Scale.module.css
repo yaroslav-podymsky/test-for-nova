@@ -1,0 +1,34 @@
+.root {
+    width: calc(100% - 120px);
+    background-color: #5d5d5d;
+    height: 2px;
+}
+.path {
+    height: 2px;
+    background-color: var(--primary-color-red);
+    animation-name: "path";
+    animation-duration: 2s;
+    width: 0px;
+    animation-fill-mode: forwards;
+    transition: 2s;
+}
+
+@keyframes path {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 100%
+    }
+}
+
+@media (max-width: 1440px) {
+    .root {
+        width: calc(100% - 64px);
+    }
+}
+  @media (max-width: 768px) {
+    .root {
+        width: calc(100% - 16px);
+    }
+}

@@ -14,10 +14,9 @@ type TProps = {
 
 const Button: React.FC<TProps> = ({ title, type = "primary", size = "m", onClick, className }) => {
   return (
-    <button className={cn(styles.button, {
+    <button className={cn(styles.button, className, {
       [styles.secondary]: type === "secondary",
       [styles.sizeS]: size === "s",
-      className
     })}
       onClick={onClick}
     >

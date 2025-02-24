@@ -1,0 +1,128 @@
+.root {
+    padding: 72px 72px 0px 120px;
+}
+.root h2 {
+   margin-bottom: 40px;
+}
+.content {
+    display: flex;
+    gap: 24px;
+}
+
+.cardsBlock {
+    width: calc(100% - 24px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.cardsBlock .card {
+    width: calc(50% - 12px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+.additionalCardsBlock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+    margin: 24px 0 32px 0 ;
+}
+.additionalCardsBlock .card {
+    width: calc(25% - 18px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    min-height: 282px;
+}
+.additionalCardsBlock .card:last-child {
+    margin-right: 0;
+}
+.rootImage {
+    width: calc(100% - 24px);
+    min-width: 588px;
+    min-height: 588px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position-x: center;
+}
+
+.button {
+    width: 100%;
+}
+
+.loader {
+    box-shadow: 0 2px 24px 0px #FF1E1E80;
+}
+@media (max-width: 1440px) {
+    .root {
+        padding: 64px 64px 0px 64px;
+    }
+    .rootImage {
+        min-width: 312px;
+        min-height: 314px;
+    }
+    .cardsBlock, .content {
+        gap: 16px;
+    }
+    .cardsBlock .card {
+        width: calc(50% - 8px);
+
+    }
+    .additionalCardsBlock .card {
+        width: calc(25% - 12px);
+        min-height: 149px;
+    }
+    .additionalCardsBlock {
+        gap: 16px;
+        margin: 16px 0 24px 0 ;
+    }
+}
+  @media (max-width: 768px) {
+    .root {
+        padding: 16px 16px 0px 16px;
+    }
+    .root h2 {
+        margin-bottom: 24px;
+     }
+    .rootImage {
+        width: 100%;
+        min-width: auto;
+        height: 400px;
+        background-size: cover;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .cardsBlock {
+        flex-direction: column;
+        width: 100%;
+    }
+    .cardsBlock .card {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+    .additionalCardsBlock .card {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+
+    }
+}
+
+@media (max-width: 360px) {
+    .rootImage {
+        min-height: auto;
+        height: 212px;
+        background-size: cover;
+    }
+    .cardsBlock .card {
+        height: 212px;
+    }
+    .additionalCardsBlock .card {
+        height: 212px;
+    }
+}

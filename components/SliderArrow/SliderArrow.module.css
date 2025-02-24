@@ -1,6 +1,6 @@
 .root {
     position: absolute;
-    top: -108px;
+    top: -104px;
     right: 120px;
     transition: .4s;
 }
@@ -35,6 +35,6 @@
         right: 16px;
     }
     .rotate {
-        right: 72px
+        right: 47px
     }
 }

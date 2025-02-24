@@ -3,9 +3,6 @@
   --secondary-color-red: #EC3F3F1A;
   --secondary-font-color: #FFFFFF;
   --primary-background-color: #181818
-  /* --breakpoint-lg: 1440px;
-  --breakpoint-md: 768px;
-  --breakpoint-sm: 360px; */
 }
 
 body {
@@ -24,39 +21,45 @@ main {
   box-sizing: border-box;
   color: var(--secondary-font-color);
   font-family: 'FuturaPT';
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 h1 {
   font-weight: 600;
   font-size: 56px;
   line-height: 56px;
+  width: fit-content;
 }
 h2 {
   font-weight: 600;
   font-size: 40px;
   line-height: 48px;
+  width: fit-content;
 }
 h3 {
   font-weight: 600;
   font-size: 32px;
   line-height: 40px;
+  width: fit-content;
 }
 h4 {
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+  width: fit-content;
 }
 p {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  width: fit-content;
 }
 a {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   width: fit-content;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

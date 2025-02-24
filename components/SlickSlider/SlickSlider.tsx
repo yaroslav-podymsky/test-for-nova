@@ -9,7 +9,9 @@ import { StaticImageData } from "next/image";
 import SliderCard from "../SliderCard/SliderCard";
 import SliderArrow from "../SliderArrow/SliderArrow";
 import Scale from "../Scale/Scale";
-import useBreakpoint from "@/app/hooks/useBreakpoint";
+import useBreakpoint from "@/hooks/useBreakpoint";
+import { v4 as uuidv4 } from 'uuid';
+
 
 export type TCardData = {
     img: StaticImageData;
@@ -25,6 +27,7 @@ type TProps = {
 
 const SlickSlider: FC<TProps> = ({ cardsData }) => {
     const breakpoint = useBreakpoint()
+
     const slidesToShow = useMemo(() => {
         if (breakpoint === 1440) return 4
         if (breakpoint === 768) return 3
@@ -32,6 +35,7 @@ const SlickSlider: FC<TProps> = ({ cardsData }) => {
         if (breakpoint === 360) return 1.2
         else return 4
     }, [breakpoint])
+
     const [slideIndex, setSlideIndex] = useState(0);
     const [updateCount, setUpdateCount] = useState(0);
     const [visibleSlides, setVisibleSlides] = useState(slidesToShow);
@@ -74,9 +78,9 @@ const SlickSlider: FC<TProps> = ({ cardsData }) => {
         <div className="slider">
             <Scale className={"scale"} value={visibleSlides || 0} />
             <Slider ref={sliderRef} {...settings}>
-                {cardsData.map((el, index) => (
+                {cardsData.map((el) => (
                     <SliderCard
-                        key={index} // in this case, you can use index
+                        key={uuidv4()}
                         img={el.img}
                         title={el.title}
                         subTitle={el.subTitle}

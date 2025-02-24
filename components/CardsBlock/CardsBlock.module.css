@@ -54,7 +54,7 @@
 }
 
 .loader {
-    box-shadow: 0 2px 24px 0px #FF1E1E80;
+    box-shadow: 0 2px 24px 0px  var(--fourth-color-red);
 }
 @media (max-width: 1440px) {
     .root {

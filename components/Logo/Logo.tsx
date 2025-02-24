@@ -2,10 +2,14 @@ import React from 'react';
 import styles from './Logo.module.css';
 import logo from '../../resources/images/logo.png'
 import Image from 'next/image';
+import cn from 'classnames'
 
-const Logo: React.FC = () => {
+type TProps = {
+  className?: string;
+}
+const Logo: React.FC<TProps> = ({ className }) => {
   return (
-    <Image className={styles.logo} src={logo} alt="Логотип" />
+    <Image className={cn(styles.logo, className)} src={logo} alt="Логотип" />
   );
 };
 

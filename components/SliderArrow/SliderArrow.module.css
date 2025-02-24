@@ -17,8 +17,8 @@
     cursor: pointer;
 }
 .hover:hover path {
-    fill: #FF1E1E;
-    box-shadow: 0 2px 24px 0px #FF1E1E80;
+    fill:  var(--third-color-red);
+    box-shadow: 0 2px 24px 0px  var(--fourth-color-red);
 }
 
 

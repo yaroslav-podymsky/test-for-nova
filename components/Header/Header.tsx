@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   return (
     <header className={styles.header}>
       <Logo />
-      <Link href={"/application"}>
+      <Link style={{ all: "unset" }} href={"/application"}>
         <Button size='s' type='secondary' title={'Подключить подписку'} />
       </Link>
     </header>

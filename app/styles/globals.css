@@ -1,8 +1,13 @@
 :root {
   --primary-color-red: #EC3F3F;
   --secondary-color-red: #EC3F3F1A;
+  --third-color-red: #FF1E1E;
+  --fourth-color-red: #FF1E1E80;
   --secondary-font-color: #FFFFFF;
-  --primary-background-color: #181818
+  --primary-background-color: #181818;
+  --secondary-background-color: #343338;
+  --primary-color-gray: #a5a5a5;
+
 }
 
 body {
@@ -58,10 +63,13 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  color: var(--primary-color-gray);
+  transition: .4s;
   width: fit-content;
-  text-decoration: none;
 }
-
+a:hover {
+  color: var(--secondary-font-color);
+}
 .leaflet-container {
   height: 540px !important; 
   width: 100% !important;

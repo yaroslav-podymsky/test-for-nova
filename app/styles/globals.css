@@ -62,6 +62,22 @@ a {
   text-decoration: none;
 }
 
+.leaflet-container {
+  height: 540px !important; 
+  width: 100% !important;
+}
+.leaflet-control-zoom-in {
+  background-color: var(--secondary-color-red) !important; 
+}
+.leaflet-control-zoom-out {
+  background-color: var(--secondary-color-red) !important; 
+}
+@media (max-width: 1440px) {
+  .leaflet-container {
+    height: 400px !important; 
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-weight: 600;

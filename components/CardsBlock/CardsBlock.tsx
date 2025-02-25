@@ -5,15 +5,24 @@ import styles from "./CardsBlock.module.css"
 import { v4 as uuidv4 } from 'uuid';
 import Button from "../Button/Button";
 import { useAppSelector } from "@/store/store";
-import useAddedCards from "@/hooks/useAddedCards";
+import useDelay from "@/hooks/useDelay";
+import { useDispatch } from "react-redux";
+import { addImage } from "@/store/imagesSlice";
 
 
 
 const CardsBlock: FC = ({ }) => {
-    const { addedCards, isLoading } = useAddedCards()
+    const { delay, isLoading } = useDelay()
     const cardData = useAppSelector((store) => store.images.images)
     const mainCards = cardData.slice(0, 5)
     const additionalCards = cardData.slice(5)
+
+    const dispatch = useDispatch()
+
+    const addCard = async () => {
+        await delay()
+        dispatch(addImage());
+    }
 
     return (
         <div className={styles.root}>
@@ -36,7 +45,7 @@ const CardsBlock: FC = ({ }) => {
                     )
                 })}
             </div>
-            <Button isLoading={isLoading} onClick={addedCards} className={styles.button} type="secondary" title="Показать еще"></Button>
+            <Button isLoading={isLoading} onClick={addCard} className={styles.button} type="secondary" title="Показать еще"></Button>
         </div>
     )
 }

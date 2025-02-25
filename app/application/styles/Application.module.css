@@ -1,0 +1,29 @@
+.root {
+    background-color: var(--primary-background-color);
+    height: 100%;
+    padding: 0px 120px;
+  }
+
+.content {
+  display: flex;
+  gap: 126px;
+}
+
+@media (max-width: 1440px) {
+  .content {
+    gap: 53px;
+  }
+  .root {
+    padding: 0px 64px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .root {
+    padding: 0px 16px;
+  }
+}

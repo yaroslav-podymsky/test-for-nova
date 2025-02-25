@@ -4,9 +4,13 @@
   --third-color-red: #FF1E1E;
   --fourth-color-red: #FF1E1E80;
   --secondary-font-color: #FFFFFF;
+  --primary-font-color: #828282;
   --primary-background-color: #181818;
   --secondary-background-color: #343338;
   --primary-color-gray: #a5a5a5;
+  --secondary-color-gray: #2f2f2f;
+  --primary-error-color: #FF5858;
+  --secondary-error-color: #EC3F3F33;
 
 }
 
@@ -18,6 +22,7 @@ body {
 
 main {
   flex: 1;
+  background-color: var(--primary-background-color);
 }
 
 * {

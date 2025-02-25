@@ -1,0 +1,56 @@
+.root{
+    width: 100%;
+    height: 56px;
+    position: relative;
+}
+
+.options {
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px 10px 5px 3px #00000081;
+}
+.select {
+    width: 100%;
+    height: 56px;
+    padding: 0 24px;
+    border: none;
+
+}
+.option, .defaultValue {
+    width: 100%;
+    height: 56px;
+    background-color: var(--secondary-color-gray);
+    padding: 0 20px;
+    cursor: pointer;    
+    display: flex;
+    align-items: center;
+}
+
+.optionHover:hover {
+    font-weight: bold;
+}
+.defaultValue {
+    color: var(--primary-font-color);
+}
+
+.errorMessage {
+    position: absolute;
+    font-size: 12px;
+    color: var(--primary-error-color);
+}
+
+.isError {
+    background-color: var(--secondary-error-color);
+}
+
+.arrow {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}

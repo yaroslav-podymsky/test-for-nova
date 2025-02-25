@@ -1,0 +1,25 @@
+.root {
+    position: relative;
+}
+
+.fileInput {
+    height: 56px;
+    background-color: var(--secondary-color-gray);
+    cursor: pointer;
+    display: block;
+    padding: 0px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.errorMessage {
+    position: absolute;
+    font-size: 12px;
+    color: var(--primary-error-color);
+}
+
+.isError {
+    background-color: var(--secondary-error-color) !important;
+}

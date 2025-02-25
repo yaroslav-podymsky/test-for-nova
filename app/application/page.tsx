@@ -1,12 +1,18 @@
+import Form from '@/components/Form/Form';
 import React from 'react';
-import {FC} from 'react';
+import styles from "./styles/Application.module.css"
+import { FC } from 'react';
+import InfoBlock from '@/components/InfoBlock/InfoBlock';
 
-const  ApplicationPage:FC = () => {
+const ApplicationPage: FC = () => {
   return (
-    <div>
-   ApplicationPage
+    <div className={styles.root}>
+      <div className={styles.content}>
+        <Form />
+        <InfoBlock />
+      </div>
     </div>
   );
 }
 
-export default  ApplicationPage;
+export default ApplicationPage;

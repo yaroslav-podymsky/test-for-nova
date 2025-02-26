@@ -62,7 +62,7 @@ const Form: React.FC = () => {
 
     return (
         <div className={styles.root}>
-            <h1 className={styles.title}>Оставьте заявку</h1>
+            <h1 style={{ whiteSpace: "nowrap" }} className={styles.title}>Оставьте заявку</h1>
             <form className={styles.form}>
                 <Selector clearErrors={clearErrors} setError={setError} errors={errors.city} value={getValues('city')} setCountry={setCountry} options={countries} />
                 <Input errors={errors.name} name={"name"} label={"Имя"} register={register} pattern={namePattern} />

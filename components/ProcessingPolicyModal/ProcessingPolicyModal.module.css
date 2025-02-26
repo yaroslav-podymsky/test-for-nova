@@ -1,0 +1,61 @@
+.root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000066;
+    z-index: 1000;
+}
+.root * {
+    color: #000000 ;
+}
+.title {
+    margin-bottom: 32x;
+}
+.content {
+    margin: 154px auto;
+    background-color: #FFFFFF;
+    padding: 56px 80px;
+    width: 80%;
+    position: relative;
+}
+.item {
+    margin-bottom: 64px;
+}
+.closeIcon {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    cursor: pointer;
+}
+.item > p:first-child {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1440px) {
+    .content {
+    padding: 48px 40px;
+    width: 90%;
+}
+.title {
+    margin-bottom: 24px;
+}
+.item {
+    margin-bottom: 32px;
+}
+
+}
+
+  @media (max-width: 768px) {
+    .item {
+        margin-bottom: 24px;
+    }
+    .content {
+        padding: 24px 16px 0px 16px;
+        width: 100%;
+        margin:0;
+        height: 100%;
+    
+    }
+  }

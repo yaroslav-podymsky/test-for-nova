@@ -2,11 +2,17 @@
 
 import { FC } from "react";
 import styles from "./MapBlock.module.css"
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import imgLogo from "../../resources/images/map-logo.png"
 import 'leaflet/dist/leaflet.css';
 import Image from 'next/image'
+import dynamic from 'next/dynamic';
+import 'leaflet/dist/leaflet.css';
+
+const MapContainer = dynamic(() => import('react-leaflet').then(mod => mod.MapContainer), { ssr: false });
+const TileLayer = dynamic(() => import('react-leaflet').then(mod => mod.TileLayer), { ssr: false });
+const Marker = dynamic(() => import('react-leaflet').then(mod => mod.Marker), { ssr: false });
+const Popup = dynamic(() => import('react-leaflet').then(mod => mod.Popup), { ssr: false });
 
 const shops = [
     { name: 'Магазин 1', position: [55.7558, 37.6176] },

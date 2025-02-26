@@ -12,12 +12,13 @@ const useBreakpoint = () => {
     const [breakpoint, setBreakpoint] = useState(getCurrentBreakpoint());
 
     function getCurrentBreakpoint() {
-        const width = window.innerWidth;
-        if (width >= breakpoints.desktop) return breakpoints.desktop;
-        if (width >= breakpoints.tablet) return breakpoints.tablet;
-        if (width >= breakpoints.mobile) return breakpoints.mobile;
-        if (width < breakpoints.mobile) return breakpoints.smallMobile;
-        return breakpoints.mobile;
+        if (typeof window !== 'undefined') {
+            const width = window.innerWidth;
+            if (width >= breakpoints.desktop) return breakpoints.desktop;
+            if (width >= breakpoints.tablet) return breakpoints.tablet;
+            if (width >= breakpoints.mobile) return breakpoints.mobile;
+        }
+        return breakpoints.desktop;
     }
 
     useEffect(() => {

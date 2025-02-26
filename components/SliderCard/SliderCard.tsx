@@ -19,8 +19,8 @@ const SliderCard: FC<TProps> = ({ img, subTitle, title, description }) => {
             <div className={classNames(styles.descriptions, {
                 [styles.descriptionsSecondPosition]: isShowScreen
             })}>
-                <h4 style={{ fontWeight: 600 }}>{title}</h4>
-                <h4>{subTitle}</h4>
+                <h4 className={styles.title} style={{ fontWeight: 600 }}>{title}</h4>
+                <h4 className={styles.subTitle}>{subTitle}</h4>
                 {isShowScreen && <p className={styles.description}>{description}</p>}
             </div>
         </div>
